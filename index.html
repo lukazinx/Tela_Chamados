@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Nova Tela de Chamados</title>
+<meta charset="utf-8">
+<meta >
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="refresh" content="">
+
+
+<style >
+
+
+.transparent-image {
+  opacity: 0.8; /* Ajuste o valor entre 0 (totalmente transparente) e 1 (totalmente opaco) */
+}
+
+body {
+    color: ;
+      background-size: cover; /* Para ajustar a imagem ao tamanho da janela */
+
+
+    }
+
+
+table {
+      border-collapse: collapse;
+      width: 100%;
+
+    }
+    th, td {
+      border: 1px solid: #ddd; 
+      padding: px;
+      text-align: center;
+
+    }
+    th {
+      background-color: #f2f2f2;
+       text-align: center;
+         padding: px;
+    } 
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+tr {
+
+  text-align: center;
+width: 1%;
+
+
+
+
+}
+
+
+
+
+
+
+</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<meta name="robots" content="noindex, follow">
+
+</head>
+
+<style>
+   /* Estilo dos flocos de neve */
+    .snowflake {
+      position: absolute; /* Os flocos de neve serão posicionados em qualquer lugar na tela */
+      top: -9px; /* Eles começam um pouco acima da tela */
+      font-size: 5.5em; /* Tamanho dos flocos */
+      color: white; /* Cor dos flocos de neve */
+      pointer-events: none; /* Impede que o usuário interaja com os flocos de neve */
+      animation: fall linear infinite; /* Aplica a animação de queda nos flocos */
+    }
+
+    /* Animação que faz os flocos caírem */
+    @keyframes fall {
+      0% {
+        transform: translateY(0) translateX(0); /* Começa no topo da tela e sem movimento horizontal */
+        opacity: 1; /* Totalmente visível no começo */
+      }
+      100% {
+        transform: translateY(100vh) translateX(20px); /* Vai até o final da tela e um pouco para a direita */
+        opacity: 0.3; /* Fica um pouco mais transparente enquanto cai */
+      }
+    }
+
+    /* Estilo do título (Feliz Natal!) */
+    h1 {
+      text-align: center; /* Centraliza o texto */
+      font-size: 2em; /* Tamanho do texto */
+    }
+
+.inativo {
+  color: red;
+}
+
+ /* imagem fundo hpeg */
+        body  {
+            background-image: url('images/natal.jpg');
+             /* Especifica o caminho para a imagem de fundo */
+            background-size: cover; /* Faz a imagem de fundo cobrir toda a área do elemento pai */
+            background-repeat: no-repeat; margin: auto 0px; padding: auto 0px; /* Impede que a imagem de fundo se repita */
+            /* Se necessário, você pode adicionar outras propriedades CSS para ajustar o posicionamento da imagem */
+            /* Define a cor de fundo com transparência */
+            background-color: rgba(255, 255, 255, 0.5); /* Cor preta com 50% de transparência */
+        }
+
+        }
+
+        /* Estilos adicionais para o conteúdo da página, como cor do texto */
+        .content {
+            color: white;
+            text-align: center;
+            padding: auto 0px;
+            padding: auto 0px;
+        }
+
+    </style>
+
+<body >
+  <!--tabela de setores--->
+<div class="wrapper d-flex align-items-stretch">
+<nav id="sidebar">
+<div  class="p-4 pt-5">
+<a href="index.html" class="img logo rounded-circle mb-5" style="background-image: url(images/hpeg.png);"></a>
+<ul class="list-unstyled components mb-5">
+<li class="active">
+<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Abra um chamado</a>
+<ul class="collapse list-unstyled" id="homeSubmenu">
+<li>
+<a href="informatica.html">Tecnologia da Informação</a>
+</li>
+<li>
+  <a href="http://10.79.1.3/recepcao/"target="_blank">Recepção</a>
+</li>
+<li>
+  <a href="https://www.appsheet.com/start/4b8b4759-d01e-425d-a118-f671d9e01950" target="_blank" >Transporte - HPEG</a>
+</li>
+<li>
+  <a href="SHL.html">S.H.L</a>
+</li>
+
+
+<li>
+
+<a href="manutencao.html">Manutenção</a>
+</li>
+
+<li>
+<a href="http://10.79.1.3/patrimonio/"target="_blank">Patrimônio</a>
+</li>
+<li>
+<a href="nep.html" target="_blank">N.E.P</a>
+</li>
+<li>
+<a href="compras.html" >Compras</a>
+
+</li>
+<li>
+<a href="engenharia.html">Engenharia Clinica</a>
+</li>
+
+<li>
+<a href="http://10.79.1.98/index.php?noAUTO=1">SND</a>
+</li>
+
+
+</ul>
+
+</li>
+
+<li>
+  
+
+<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Salutem</a>
+<ul class="collapse list-unstyled" id="pageSubmenu">
+<li>
+<a href="http://10.79.1.132:9003"target="_blank">Sistema de Gestão</a>
+</li>
+<li>
+  <a href="https://apresentacao.sistemasalutem.com.br/hospitalar/#/login" target="_blank">Ambiente de Treinamentos</a>
+</li>
+
+<li>
+<a href="https://linktr.ee/sistemasalutem"target="_blank">Salutem - Aulas</a>
+</li>
+<li>
+<a href="https://helpdesk.sistemasalutem.com.br/Account/Login?ReturnUrl=%2f"target="_blank">Suporte</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="qualidade.html">SAS Interact</a>
+</li>
+
+<li>
+<a href="https://cb.shiftcloud.com.br/shift/lis/cb/elis/s01.iu.web.Login.cls?config=UNICO" >Agencia Transfusional</a>
+
+<!-- 
+<li>
+<a href="Cursos.html" >TESTE</a>
+</li>-->
+
+</ul>
+<div class="footer">
+<p>
+<a href="https://issaa.org.br" target="_blank">ISSAA</a>
+</p>
+</li>
+<li>
+<a href="https://www.issaa.org.br/instituto/etica-e-conduta#inicio"target="_blank" >CÓDIGO DE ÉTICA E CONDUTA</a>
+</li>
+</div>
+</div>
+</nav>
+<!--tabela de setores--->
+
+<div id="content" class="p-4 p-md-5">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<button type="button" id="sidebarCollapse" class="btn btn-info">
+<i class="fa fa-bars"></i>
+<span class="sr-only">Toggle Menu</span>
+</button>
+<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-bars"></i>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+<ul class="nav navbar-nav ml-auto">
+
+
+<li class="nav-item active">
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  
+  <a href="https://sites.google.com/view/sistemasissaa/rh"><button class="btn btn-info me-md-2" type="button">Sistema Sênior</button>    </a>                    
+
+  
+</div>
+
+</li>
+
+<ul>
+ <a href="medicosteste.html"><button style="color:;" class="btn btn-info me-md-2" type="button">Protocolos Clinicos</button> </a>
+ 
+</ul>
+
+<ul>
+ <a href="cardapio.php"><button class="btn btn-info me-md-2" type="button">Cardapio Semanal</button> </a>
+ 
+</ul>
+<ul>
+ <a href="http://localhost:8042/ohif/" target="_blank"><button class="btn btn-info me-md-2" type="button">E-mail HPEG</button> </a>
+ 
+</ul>
+<ul>
+ <a href="http://10.79.1.132:9003"target="_blank"><button style="color:;" class="btn btn-info me-md-2" type="button">Salutem</button> </a>
+ 
+</ul>
+
+
+ 
+</ul>
+</ul>
+</div>
+</div>
+</nav>
+<b>
+ <font style="" color="black"> 
+<table transparent-image class="transparent-image" width="" style="background-color:#F0FFF0 ;" border="3">
+  <thead >
+    <tr>
+      <th>RAMAL</th>
+      <th>SETOR</th>
+      <th>RAMAL</th>
+      <th>SETOR</th>
+      <th>RAMAL</th>
+      <th>SETOR</th>
+      <th>RAMAL</th>
+      <th>SETOR</th> 
+    </tr>
+  </thead>
+  </b>
+  </font>
+  <tbody align="center" style=" ">
+    <!-- Linhas -->
+
+    <tr >
+      <td >1050</td>
+      <td> RECEPÇÃO</td>
+      <td class="inativo" >1065</td>
+      <td>INATIVO</td>
+      <td class="inativo">1080</td>
+      <td >INATIVO</td>
+      <td>1095</td>
+      <td>ASSE.DIRETORIA</td>
+    </tr>
+    <tr>
+      <td class="inativo">1051</td>
+      <td>INATIVO</td>
+      <td>1066</td>
+      <td>EQUIPE MULTI</td>
+      <td>1081</td>
+      <td style="color: green;">POSTO VERDE</td>
+      <td>1096</td>
+      <td>INATIVO</td>
+    </tr>
+<tr>
+      <td>1052</td>
+      <td>HUMANIZAÇÃO</td>
+      <td>1067</td>
+      <td>HOTELARIA</td>
+      <td>1082</td>
+      <td style="color: #FFD700;">POSTO AMARELO</td>
+      <td>1097</td>
+      <td>DIRETORIA GERAL</td>
+    </tr>
+<tr>
+      <td>1053</td>
+      <td>GESTÃO DE PESSOAS</td>
+      <td>1068</td>
+      <td>FARMÁCIA</td>
+      <td>1083</td>
+      <td style="color: orange;">POSTO LARANJA</td>
+      <td>1098</td>
+      <td>COORD.SUPRIMENTOS</td>
+    </tr>
+
+<tr>
+      <td>1054</td>
+      <td>FARMACIA SATÉLITE</td>
+      <td>1069</td>
+      <td>MANUTENÇÃO</td>
+      <td>1084</td>
+      <td style="color: 
+#00BFFF;" >POSTO AZUL</td>
+      <td  class="inativo">1099</td>
+      <td>INATIVO</td>
+    </tr>
+<tr>
+      <td>1055</td>
+      <td>CONTRATOS / PATRIMONIO /
+       FINANCEIRO</td>
+      <td>1070</td>
+      <td>CENTRAL ATA 1</td>
+      <td>1085</td> <!-- 1085 quando voltar origem-->
+      <td>C.CIRÚRGICO</td>
+    
+    </tr>
+<tr>
+      <td>1056</td>
+      <td>S.N.D</td>
+      <td class="inativo">1071</td>
+      <td>INATIVO</td>
+      <td>1096</td> <!--  1086 origem -->
+      <td>U.T.I</td>
+   
+    </tr>
+<tr>
+      <td>1057</td>
+      <td>SESMT</td>
+      <td>1072</td>
+      <td>EDUCAÇÃO CONTINUADA</td>
+      <td>1087</td>
+      <td>LABORATORIO</td>
+     
+    </tr>
+<tr>
+      <td>1058</td>
+      <td>T.I</td>
+      <td>1073</td>
+      <td>CENTRAL ATA 2</td>
+      <td>1088</td>
+      <td>S.A.U</td>
+
+    </tr>
+    <tr>
+      <td>1059</td>
+      <td>FATURAMENTO</td>
+      <td>1074</td>
+      <td>AUDIT.ENFERMAGEM</td>
+      <td class="inativo">1089</td>
+      <td>INATIVO</td>
+     
+    </tr>
+
+    <tr>
+      <td>1060</td>
+      <td>PORTARIA</td>
+      <td>1075</td>
+      <td>DIRETORIA TÉCNICA</td>
+      <td>1090</td>
+      <td>RADIOLOGIA</td> <!--  1090 origem -->
+
+    </tr>
+     <tr>
+      <td>1061</td>
+      <td>QUALIDADE</td>
+      <td>1076</td>
+      <td>C.M.E</td>
+      <td>1091</td>
+      <td>N.I.R</td>
+    
+    </tr>
+     <tr>
+      <td>1062</td>
+      <td>ENG.CLINICA</td>
+      <td>1077</td>
+      <td>ESTAR MÉDICOS</td>
+      <td class="inativo">1092</td>
+      <td>INATIVO</td>
+     
+    </tr>
+     <tr >
+      <td>1063</td>
+      <td>COMPRAS</td>
+      <td>1078</td>
+      <td>COORD.APOIO/S.ATENDIMENTO</td>
+      <td>1093</td>
+      <td>COORD.ENFERMAGEM</td>
+      
+    </tr> 
+    <tr>
+      <td>1064</td>
+      <td>COMPRAS</td>
+      <td>1079</td>
+      <td>S.C.I.H</td>
+      <td>1094</td>
+      <td>AMBULATÓRIO</td>
+     
+
+    <!-- Adicinar mais linhas conforme necessário -->
+  </tbody>
+</table>
+</div>
+</div>
+
+    <script>
+    const snowflakesCount = 210; // Número de flocos de neve a serem gerados
+
+    // Criar os flocos de neve
+    for (let i = 0; i < snowflakesCount; i++) {
+      const snowflake = document.createElement('div'); // Cria um elemento de "floco de neve"
+      snowflake.className = 'snowflake'; // Aplica a classe 'snowflake' (com o estilo da animação)
+      snowflake.textContent = '❄'; // O símbolo do floco de neve (pode ser alterado para outro ícone, como '✽')
+      
+      // Define a posição inicial dos flocos (aleatória no eixo X)
+      snowflake.style.left = Math.random() * 100 + 'vw'; // Posiciona o floco de neve de forma aleatória, de 0 a 100% da largura da tela
+      snowflake.style.animationDuration = Math.random() * 5 + 5 + 's'; // Define uma duração aleatória para a animação (de 5 a 10 segundos)
+      snowflake.style.animationDelay = Math.random() * 5 + 's'; // Define um atraso aleatório para começar a animação
+      snowflake.style.fontSize = Math.random() * 20 + 10 + 'px'; // Define um tamanho aleatório para cada floco (entre 10 e 25px)
+
+      document.body.appendChild(snowflake); // Adiciona o floco de neve criado à página
+    }
+  </script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7df729960cfa1cef","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

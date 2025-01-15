@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div com Imagem de Fundo e Tabela na Frente</title>
+<style>
+         /* Estilo para a div */
+    .container {
+          position: relative;
+        margin: ;
+        width: 1100px;
+        height: 600px; /* Altura da div, ajuste conforme necessário */
+        background-image: url('cad.jpeg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho da sua imagem */
+        background-size: cover;
+        background-position: center;
+        color: rgb(0, 0, 0); /* Cor do texto */
+        text-align: center;
+    }
+    
+    /* Estilo para a tabela */
+    .table-container {
+       position: absolute;
+        top: 53%; /* Centraliza verticalmente */
+        left: 60%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0); /* Cor de fundo da tabela com transparência */
+        padding: 50px;
+        width: 900px;
+        border-radius: 10px;
+    }
+    
+    /* Estilo para as células da tabela */
+     td {
+      text-align:center;
+      font-size: 12px;
+        padding: 12px;
+        border: px solid rgb(0, 0, 0);
+    }
+    th {
+      text-align: center;
+      padding: 3px;
+      font-size: 12px;
+     
+    }
+   table {
+        border: 1;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="table-container">
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Data</th>
+      <th>Prato principal</th>
+      <th>1° Guarnição</th>
+      <th>2° Guarnição</th>
+      <th>Acompanhamento</th>
+      <th>Sobremesa</th>
+      <th>Inf.Nutricional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>23/12</td>
+      <td>Suino acebolado</td>
+      <td>Arroz</td>
+      <td>Feijão preto</td>
+      <td>Salada</td>
+      <td>Suco ou fruta</td>
+      <td>750 kcal</td>
+    </tr>
+    <tr>
+      <td>24/12/2024</td>
+      <td>Peru a california</td>
+      <td>Arroz</td>
+      <td>Feijão Rajado</td>
+      <td>Farofa</td>
+      <td>Suco ou fruta</td>
+      <td>760 kcal</td>
+    </tr>
+    <tr>
+      <td>25/12/2024</td>
+      <td>Peru a california</td>
+      <td>Arroz</td>
+      <td>Feijão Rajado</td>
+      <td>Farofa</td>
+      <td>Suco ou fruta</td>
+      <td>550 kcal</td>
+    </tr>
+    <tr>
+      <td>26/12/2024</td>
+      <td>Peixe de Forno</td>
+      <td>Arroz</td>
+      <td>Feijão manteiguinha</td>
+      <td>Salada</td>
+      <td>Suco ou fruta</td>
+      <td>700 kcal</td>
+    </tr>
+    <tr>
+      <td>27/12/2024</td>
+      <td>Carne assada</td>
+      <td>Arroz</td>
+      <td>Feijão Rajado</td>
+      <td>Salada</td>
+      <td>Suco ou fruta</td>
+      <td>700 kcal</td>
+    </tr>
+    <tr>
+      <td>28/12/2024</td>
+      <td>Carne assada</td>
+      <td>Arroz</td>
+      <td>Feijão preto</td>
+      <td>Salada</td>
+      <td>Suco ou fruta</td>
+      <td>700 kcal</td>
+    </tr>
+    <tr>
+      <td>22/12/2024</td>
+      <td>Suino de Forno</td>
+      <td>Arroz</td>
+      <td>Feijão preto</td>
+      <td>Salada</td>
+      <td>Suco ou fruta</td>
+      <td>690 kcal</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+</div>
+
+</body>
+</html>
+

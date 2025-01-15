@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário</title>
+<style>
+  /* Estilos CSS para o formulário */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<h2>Formulário</h2>
+
+<form id="myForm">
+  <label for="name">Nome:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email">
+
+  <label for="message">Mensagem:</label>
+  <textarea id="message" name="message"></textarea>
+
+  <input type="submit" value="Enviar">
+</form>
+
+<script>
+  // JavaScript para validação do formulário
+  const form = document.getElementById('myForm');
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const messageInput = document.getElementById('message');
+
+  form.addEventListener('submit', function(event) {
+    let errors = [];
+
+    if (nameInput.value.trim() === '') {
+      errors.push('Por favor, insira seu nome.');
+    }
+
+    if (emailInput.value.trim() === '') {
+      errors.push('Por favor, insira seu email.');
+    } else if (!isValidEmail(emailInput.value.trim())) {
+      errors.push('Por favor, insira um email válido.');
+    }
+
+    if (messageInput.value.trim() === '') {
+      errors.push('Por favor, insira sua mensagem.');
+    }
+
+    if (errors.length > 0) {
+      event.preventDefault();
+      displayErrors(errors);
+    } else {
+      // Simulação de envio para um servidor fictício (exibido no console)
+      console.log('Dados do formulário:');
+      console.log('Nome:', nameInput.value.trim());
+      console.log('Email:', emailInput.value.trim());
+      console.log('Mensagem:', messageInput.value.trim());
+      alert('Formulário enviado com sucesso!');
+      // Limpa os campos do formulário após o envio bem-sucedido (opcional)
+      form.reset();
+    }
+  });
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  function displayErrors(errors) {
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error';
+    errorDiv.innerHTML = '<h3>Por favor, corrija os seguintes erros:</h3><ul>' +
+                         errors.map(error => `<li>${error}</li>`).join('') +
+                         '</ul>';
+    form.parentNode.insertBefore(errorDiv, form.nextSibling);
+  }
+</script>
+
+</body>
+</html>
